@@ -29,7 +29,7 @@ public class LumaRunnerTest {
     @BeforeClass
     public static void startDriver() {
 
-        System.setProperty("webdriver.chrome.driver", "./src/Drivers/WindowsChromeDriver/chromedriver");
+        System.setProperty("webdriver.chrome.driver", "./src/Drivers/LinuxChromeDriver/chromedriver");
         driver = new ChromeDriver();
         actions = new Actions(driver);
         login();
