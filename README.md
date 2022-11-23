@@ -24,7 +24,7 @@ add more scenarios along with existing scenarios under the Luma.feature file.
 
 ## Project Requirements - 
 * Design the use case in gherkin to perform the below activity-
-  Test Case# - 
+ 
  1. Login using Registered user 
  2. Buy 2 Men Tops → Jackets, 1 Men Bottoms → Pants 
  3. Go to the cart page (Proceed to checkout) 
