@@ -1,9 +1,9 @@
-package cucumber;
+package stepDefinition;
 
-import static applicationModel.StaticConstants.*;
+import static pageObject.StaticConstants.*;
 
 import java.util.List;
-import applicationModel.*;
+import pageObject.*;
 import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;

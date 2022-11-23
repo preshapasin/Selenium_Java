@@ -11,14 +11,13 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 
-import static applicationModel.StaticConstants.*;
+import static pageObject.StaticConstants.*;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
         features = {"./src/test/resources/features/Luma.feature"},
-        glue = {"cucumber"},
+        glue = {"stepDefinition"},
         plugin = {"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"},
-       // publish = true,
         monochrome = true
 )
 @Slf4j

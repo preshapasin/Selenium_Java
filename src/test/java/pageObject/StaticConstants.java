@@ -1,4 +1,4 @@
-package applicationModel;
+package pageObject;
 
 import Util.FetchProperties;
 import org.openqa.selenium.WebDriver;

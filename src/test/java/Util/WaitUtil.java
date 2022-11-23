@@ -3,7 +3,7 @@ package Util;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
-import static applicationModel.StaticConstants.driver;
+import static pageObject.StaticConstants.driver;
 
 /**
  * Usage is to pause the execution for the mentioned time. The wait time is in milliseconds.

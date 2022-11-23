@@ -1,6 +1,6 @@
-package applicationModel;
+package pageObject;
 
-import static applicationModel.StaticConstants.*;
+import static pageObject.StaticConstants.*;
 
 import java.util.List;
 import Util.WaitUtil;
@@ -23,6 +23,7 @@ public class LumaUtil {
 
     public LumaUtil() {
         webDef = new WebElementsDef();
+        waiting = new WaitUtil();
     }
 
     public void mainCategoryMethod()  {
@@ -61,9 +62,9 @@ public class LumaUtil {
     public void sizeColourJackets(List<List<String>> data) {
         log.info("Select size and colour of product");
 
-        String s = data.get(0).get(0);
+        String sizeS = data.get(0).get(0);
         String blue = data.get(0).get(1);
-        String m = data.get(1).get(0);
+        String sizeM = data.get(1).get(0);
         String red = data.get(1).get(0);
 
         waiting.isPageLoaded();
@@ -72,7 +73,7 @@ public class LumaUtil {
         expectedPrice = driver.findElement(By.xpath(webDef.expectedPrice));
         expected = expectedOrder.getAttribute("alt");
         priceExp = expectedPrice.getText();
-        if (!(jacketSize.getText() == s)) {
+        if (!(jacketSize.getText() == sizeS)) {
             jacketSize.click();
         }
         waiting.isPageLoaded();
@@ -90,7 +91,7 @@ public class LumaUtil {
         expectedM = expectedOrderM.getAttribute("alt");
         priceExpM = expectedPriceM.getText();
         waiting.isPageLoaded();
-        if (!(jacketSizeM.getText() == m)) {
+        if (!(jacketSizeM.getText() == sizeM)) {
             jacketSizeM.click();
         }
 
@@ -106,7 +107,7 @@ public class LumaUtil {
     public void sizeColourPants(List<List<String>> datap) {
         log.info("Select size and colour of product");
 
-        String size = datap.get(0).get(0);
+        String size33 = datap.get(0).get(0);
         String black = datap.get(0).get(1);
 
         waiting.isPageLoaded();
@@ -116,7 +117,7 @@ public class LumaUtil {
         expected33 = expectedOrder33.getAttribute("alt");
         priceExp33 = expectedPrice33.getText();
         waiting.isPageLoaded();
-        if (!(jacketSize33.getText() == size)) {
+        if (!(jacketSize33.getText() == size33)) {
             jacketSize33.click();
         }
 

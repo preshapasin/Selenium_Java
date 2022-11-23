@@ -1,4 +1,4 @@
-package applicationModel;
+package pageObject;
 
 import lombok.extern.slf4j.Slf4j;
 
