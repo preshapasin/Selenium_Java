@@ -28,7 +28,7 @@ public class LumaUtil {
 
     public void mainCategoryMethod()  {
 
-        //System.out.println("Hover over the main category");
+        System.out.println("Hover over the main category");
         waiting.isPageLoaded();
         WebElement men = driver.findElement(By.xpath(webDef.men));
         actions.moveToElement(men);
